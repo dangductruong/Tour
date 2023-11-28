@@ -1,0 +1,86 @@
+@import "../../GlobalStyles/Responsive.scss";
+.footer-wrapper {
+  width: 100%;
+}
+.inner {
+  padding: 55px 15px 0 15px;
+  display: flex;
+  @include breakpoint(md) {
+    display: block;
+  }
+}
+.out-awards {
+  width: 33%;
+  padding: 0 15px;
+  @include breakpoint(md) {
+    width: 100%;
+  }
+}
+.contact-info {
+  width: 33%;
+  padding: 0 15px;
+  @include breakpoint(md) {
+    width: 100%;
+    margin-top: 15px;
+  }
+}
+.recent-trips {
+  width: 33%;
+  padding: 0 15px;
+  margin: 0 -2px;
+  @include breakpoint(md) {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+}
+.out-awards-title {
+  font-size: 1.2rem;
+  padding-bottom: 20px;
+}
+.out-awards-content {
+  line-height: 1.6rem;
+  color: #cccccc;
+  padding-bottom: 40px;
+}
+.out-awards-img {
+  width: 100%;
+  @include breakpoint(md) {
+    width: 50%;
+  }
+}
+.info {
+  display: flex;
+  color: #cccccc;
+  padding: 15px 0;
+}
+.icon-info {
+  padding: 0 4px;
+}
+.text-info {
+  padding-left: 5px;
+}
+.icon-app {
+  font-size: 2.5rem;
+  padding: 0 5px;
+  @include breakpoint(md) {
+    margin: auto;
+  }
+}
+.recent-trips-img {
+  width: 33%;
+  padding: 0 2px;
+}
+.style-img {
+  width: 100%;
+  min-height: 75px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.inner-recent-trips {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.recent-trips-title {
+  padding-bottom: 15px;
+}

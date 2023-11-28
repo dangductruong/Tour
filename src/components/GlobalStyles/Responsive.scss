@@ -1,0 +1,14 @@
+@mixin breakpoint($point) {
+  @if $point==md {
+    @media (max-width: 765px) {
+      @content;
+    }
+  }
+}
+@mixin breakheader($point) {
+  @if $point==md {
+    @media (max-width: 920px) {
+      @content;
+    }
+  }
+}

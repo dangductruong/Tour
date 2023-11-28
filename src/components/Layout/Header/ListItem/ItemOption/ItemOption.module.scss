@@ -1,0 +1,31 @@
+.item-option {
+  height: 40px;
+  width: 240px;
+  background-color: white;
+  display: inline-block;
+  align-items: center;
+}
+.link-option {
+  display: block;
+  padding: 8px 0 6px 0;
+  margin: 0 20px 0 20px;
+  width: 200px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  position: relative;
+  text-align: left;
+  color: black;
+  text-decoration: none;
+}
+.link-option:hover {
+  color: rgb(255, 115, 0);
+}
+.br-after::after {
+  content: "";
+  position: absolute;
+  border-width: 1px 100px;
+  border-style: solid;
+  border-color: rgb(217, 217, 217);
+  top: -8px;
+  left: 0;
+}

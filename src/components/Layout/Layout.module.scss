@@ -1,0 +1,29 @@
+.wrapper-app {
+  position: relative;
+}
+.content {
+  position: absolute;
+  height: 800px;
+  width: 100%;
+  top: 0;
+}
+.header {
+  position: absolute;
+  z-index: 1;
+  padding: 0 30px;
+  width: 100%;
+
+  right: 0;
+  left: 0;
+}
+.footer {
+  background-color: black;
+  color: white;
+  width: 100%;
+  z-index: 10;
+}
+.btn-to-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+}
