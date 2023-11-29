@@ -1,10 +1,17 @@
+@import "../../../GlobalStyles/Responsive.scss";
 .tour-image-link {
   display: block;
 
   position: relative;
-  margin: 15px;
+  padding: 0 12.5px 30px 12.5px;
+  
   border-radius: 6px;
   transition: transform linear 0.1s;
+  width: 100%;
+  @include breakpoint(md) {
+    display: flex;
+    justify-content: center;
+  }
 }
 .tour-image-link:hover {
   transform: translateY(-2px);
@@ -12,8 +19,8 @@
 }
 .name-image {
   position: absolute;
-  bottom: 18px;
-  left: 18px;
+  bottom: 45px;
+  left:25px;
   color: white;
 }
 .image-tour {
@@ -22,4 +29,6 @@
   min-height: 180px;
   object-fit: cover;
   border-radius: 6px;
+  min-width: none;
+ 
 }

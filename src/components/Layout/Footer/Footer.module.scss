@@ -68,12 +68,12 @@
 }
 .recent-trips-img {
   width: 33%;
-  padding: 0 2px;
+  padding: 2px;
 }
 .style-img {
   width: 100%;
-  min-height: 75px;
-  object-fit: cover;
+height: 100%;
+  object-fit:fill;
   border-radius: 6px;
 }
 .inner-recent-trips {

@@ -2,7 +2,7 @@ import classNames from "classnames/bind";
 import styles from "./ItemMobieMenu.module.scss";
 const cx = classNames.bind(styles);
 function ItemMobieMenu({ list = [] }) {
-  console.log(list);
+  
   return (
     <>
       {list.map((item, index) => {
