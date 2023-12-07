@@ -11,6 +11,7 @@
 }
 .wrapper-header-center {
   align-items: center;
+  max-width: 100%;
   width: 1250px;
   height: 74px;
   display: flex;
@@ -92,7 +93,7 @@
   font-size: 1.5rem;
   color: white;
   top: 30px;
-  left:  266px;
+  left: 266px;
   @include breakpoint(md) {
     left: 185px;
   }
@@ -120,7 +121,6 @@
 .bar-checkbox:checked ~ .layout {
   display: block;
 }
-
 
 .list-mobieMenu {
   width: 100%;

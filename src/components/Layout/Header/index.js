@@ -22,6 +22,14 @@ import ItemMobieMenu from "./ItemMobieMenu";
 
 const cx = className.bind(styles);
 function Header() {
+  function handle(event) {
+    const { checked } = event.target;
+    if (checked) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }
   return (
     <div className={cx("wrapper-header")}>
       <div className={cx("wrapper-header-center")}>
@@ -80,6 +88,7 @@ function Header() {
         type="checkbox"
         id="checkbox-show"
         className={cx("bar-checkbox")}
+        onChange={handle}
         hidden
       ></input>
       <label htmlFor="checkbox-show" className={cx("layout")}></label>

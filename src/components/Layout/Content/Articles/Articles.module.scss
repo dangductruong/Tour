@@ -1,5 +1,4 @@
 .wrapper {
-  margin: 15px;
   border-radius: 6px;
   transition: transform linear 0.1s;
   border: 1px solid #dce0e0;
@@ -20,24 +19,29 @@
   font-size: 0.7rem;
   font-weight: 500;
   padding-bottom: 10px;
+  word-wrap: break-word;
 }
 .title {
   font-size: 1.4rem;
   font-weight: 900;
   padding-bottom: 37px;
+  word-wrap: break-word;
 }
 .tagline {
   font-size: 0.9rem;
   line-height: 1.6rem;
   padding-bottom: 40px;
+  word-wrap: break-word;
 }
 .more {
   display: flex;
   padding-bottom: 15px;
+  flex-wrap: wrap;
 }
 .text-more {
   color: #949494;
   margin-right: 8px;
+  word-break: break-all;
 }
 
 .icon-more {

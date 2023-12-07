@@ -1,17 +1,20 @@
 .standard-wrapper {
-width: 100%;
-text-align: center;
+  width: 100%;
+  text-align: center;
 }
 .title {
   color: black;
   font-weight: 900;
   font-size: 2.4rem;
   margin-bottom: 10px;
+  letter-spacing: 0px;
+  word-wrap: break-word;
 }
 .page-tagline {
   color: #a4a7ad;
   font-size: 1rem;
-
+  letter-spacing: 0px;
+  word-wrap: break-word;
 }
 .white {
   color: white;

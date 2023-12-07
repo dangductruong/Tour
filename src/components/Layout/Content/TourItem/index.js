@@ -12,7 +12,21 @@ const cx = classNames.bind(styles);
 function TourItem({ nameItem, cancelPrice, price, srcItem, target, time }) {
   return (
     <a className={cx("tour-item-link")}>
-      <img className={cx("item-img")} src={srcItem}></img>
+      <div className={cx("img")}>
+        <img className={cx("item-img")} src={srcItem}></img>
+        <div className={cx("price-wrapper")}>
+          {cancelPrice && (
+            <div className={cx("price-center")}>
+              <FontAwesomeIcon className={cx("icon-cancel")} icon={faDollar} />
+              <p className={cx("price-cancel")}>{cancelPrice}</p>
+            </div>
+          )}
+          <div className={cx("price-center")}>
+            <FontAwesomeIcon className={cx("icon-price")} icon={faDollar} />
+            <p className={cx("price")}>{price}</p>
+          </div>
+        </div>
+      </div>
       <div className={cx("content-wrapper")}>
         <h2 className={cx("name-item")}>{nameItem}</h2>
         <p className={cx("target-item")}>{target}</p>
@@ -31,18 +45,7 @@ function TourItem({ nameItem, cancelPrice, price, srcItem, target, time }) {
           </span>
         </div>
       </div>
-      <div className={cx("price-wrapper")}>
-        {cancelPrice && (
-          <div className={cx("price-center")}>
-            <FontAwesomeIcon className={cx("icon-cancel")} icon={faDollar} />
-            <p className={cx("price-cancel")}>{cancelPrice}</p>
-          </div>
-        )}
-        <div className={cx("price-center")}>
-          <FontAwesomeIcon className={cx("icon-price")} icon={faDollar} />
-          <p className={cx("price")}>{price}</p>
-        </div>
-      </div>
+
       {cancelPrice && <div className={cx("stickerSale")}>sale</div>}
     </a>
   );

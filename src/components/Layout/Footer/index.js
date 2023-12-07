@@ -27,7 +27,7 @@ function Footer() {
           ></img>
         </div>
         <div className={cx("contact-info")}>
-          <h2>Contact Info</h2>
+          <h2 className={cx("contact-info-title")}>Contact Info</h2>
           <div className={cx("info")}>
             <FontAwesomeIcon className={cx("icon-info")} icon={faPhone} />
             <p className={cx("text-info")}>1-567-124-44227</p>

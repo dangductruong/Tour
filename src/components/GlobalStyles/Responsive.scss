@@ -12,3 +12,10 @@
     }
   }
 }
+@mixin breakwidthbutton($point) {
+  @if $point==md {
+    @media (max-width: 1190px) {
+      @content;
+    }
+  }
+}

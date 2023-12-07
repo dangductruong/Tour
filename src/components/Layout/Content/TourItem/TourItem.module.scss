@@ -1,7 +1,8 @@
 .tour-item-link {
+  width: 100%;
   display: block;
   position: relative;
-  margin: 15px;
+
   border: 1px solid #dce0e0;
   border-radius: 6px;
 
@@ -22,12 +23,14 @@
 }
 .content-wrapper {
   padding: 15px;
+  width: 100%;
 }
 .name-item {
   font-size: 1.3rem;
   font-weight: 900;
   margin-bottom: 15px;
   color: black;
+  word-wrap: break-word;
 }
 .target-item {
   margin-bottom: 20px;
@@ -36,13 +39,17 @@
   font-weight: 500;
 }
 .icon-item {
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  box-sizing: border-box;
+  flex-wrap: wrap;
 }
 .icon-star {
   color: #1ec6b6;
   font-size: 0.8rem;
   display: flex;
+  flex-wrap: wrap;
 }
 .text-review {
   color: black;
@@ -53,6 +60,7 @@
   color: #4d4f4d;
   display: flex;
   font-size: 0.8rem;
+  flex-wrap: wrap;
 }
 .text-day {
   font-size: 0.8rem;
@@ -64,8 +72,9 @@
   display: flex;
   background-color: #ff4a52;
   position: absolute;
-  bottom: 138px;
+  bottom: 20px;
   padding: 6px 8px 6px 9px;
+  flex-wrap: wrap;
 }
 .price {
   font-size: 1rem;
@@ -108,4 +117,7 @@
   font-size: 0.8rem;
   color: white;
   padding: 6px 0 0 4px;
+}
+.img {
+  position: relative;
 }
