@@ -19,7 +19,7 @@ import {
   listMobieMenu,
 } from "./DataListMenu/list";
 import ItemMobieMenu from "./ItemMobieMenu";
-
+import { Link } from "react-router-dom";
 const cx = className.bind(styles);
 function Header() {
   function handle(event) {
@@ -35,12 +35,14 @@ function Header() {
       <div className={cx("wrapper-header-center")}>
         <div className={cx("logo-wrapper")}>
           <div className={cx("logo-align")}>
-            <img
-              width="92px"
-              height="22px"
-              src="https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/themes/grandtour/images/logo@2x_white.png"
-              alt=""
-            />
+            <Link to="/">
+              <img
+                width="92px"
+                height="22px"
+                src="https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/themes/grandtour/images/logo@2x_white.png"
+                alt=""
+              />
+            </Link>
           </div>
         </div>
         <div className={cx("menu-center")}>

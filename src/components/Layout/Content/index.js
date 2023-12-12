@@ -22,6 +22,7 @@ import TourImage from "./TourImage";
 import TourItem from "./TourItem";
 import ReasonsItem from "./ReasonsItem";
 import Articles from "./Articles";
+
 const cx = classNames.bind(styles);
 
 function Content() {
@@ -110,6 +111,7 @@ function Content() {
             <div className={cx("content-trip-inner")}>
               <div className={cx("container-25")}>
                 <TourImage
+                  href={"/tokyo"}
                   nameImage={"Tokyo"}
                   srcImage={
                     "https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/Tokyo_Dollarphotoclub_72848283-copy.jpg"

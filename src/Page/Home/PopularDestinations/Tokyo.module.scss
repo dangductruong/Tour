@@ -1,0 +1,45 @@
+@import "../../../components/GlobalStyles/Responsive.scss";
+.tokyo {
+  width: 100%;
+  display: block;
+}
+.image-main {
+  position: relative;
+  width: 100%;
+  height: 550px;
+  display: flex;
+  justify-content: center;
+}
+.image-main-content {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.image-main-title {
+  position: absolute;
+  bottom: 25px;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+.content {
+  width: 100%;
+  display: flex;
+  padding: 20px 100px;
+  justify-content: center;
+  line-height: 2rem;
+  transition: all linear 0.1s;
+  @include breakwidthbutton(md) {
+    padding: 20px 40px;
+  }
+}
+.img-content {
+  width: 100%;
+  height: 560px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin: 20px 0;
+}
+.center {
+  align-items: center;
+}
