@@ -5,11 +5,13 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import GlobalStyles from "./components/GlobalStyles/GlobalStyles";
 import { BrowserRouter } from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <GlobalStyles>
     <React.StrictMode>
       <BrowserRouter>
+        <ScrollToTop />
         <App />
       </BrowserRouter>
     </React.StrictMode>

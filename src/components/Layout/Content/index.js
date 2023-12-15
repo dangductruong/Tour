@@ -120,6 +120,7 @@ function Content() {
               </div>
               <div className={cx("container-25")}>
                 <TourImage
+                  href={"/seoul"}
                   nameImage={"Seoul"}
                   srcImage={
                     "https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/bf1202aedf2c5b6a57d379575619a488.jpg"
@@ -128,6 +129,7 @@ function Content() {
               </div>
               <div className={cx("container-25")}>
                 <TourImage
+                  href={"/paris"}
                   nameImage={"Paris"}
                   srcImage={
                     "https://themes-themegoods.b-cdn.net/grandtour/demo/wp-content/uploads/2016/12/1600x1200-4.jpg"
@@ -136,7 +138,8 @@ function Content() {
               </div>
               <div className={cx("container-25")}>
                 <TourImage
-                  nameImage={"VietNam"}
+                  href={"/vietnam"}
+                  nameImage={"Viet Nam"}
                   srcImage={
                     "https://cdn.vntrip.vn/cam-nang/wp-content/uploads/2017/08/hoi-an-quang-nam-vntrip.jpg"
                   }
