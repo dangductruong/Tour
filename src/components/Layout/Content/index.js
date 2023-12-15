@@ -22,6 +22,7 @@ import TourImage from "./TourImage";
 import TourItem from "./TourItem";
 import ReasonsItem from "./ReasonsItem";
 import Articles from "./Articles";
+import { Link } from "react-router-dom";
 
 const cx = classNames.bind(styles);
 
@@ -64,7 +65,9 @@ function Content() {
                 <Select list={listSortByDate} />
               </div>
 
-              <button className={cx("button-search")}>Search</button>
+              <Link to={"/TourSearch"} className={cx("button-search")}>
+                Search
+              </Link>
             </div>
             {show && (
               <div className={cx("button-wrapper-more")}>

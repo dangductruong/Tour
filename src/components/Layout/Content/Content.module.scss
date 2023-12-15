@@ -207,11 +207,14 @@
 }
 
 .button-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-left: 5px;
   border-radius: 4px;
   height: 40px;
   width: 25%;
-
+  text-decoration: none;
   border-color: transparent;
   background-color: #ff4a52;
   color: white;
